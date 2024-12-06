@@ -1,0 +1,12 @@
+section[data-section]:not(:first-child) {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+footer {
+  min-height: 100vh;
+}

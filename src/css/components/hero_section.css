@@ -1,0 +1,133 @@
+.hero_section {
+  --_font-size-p: 16px;
+  --_price-size: 4rem;
+  --_margin-top: 2.6rem;
+  --_btn-width: 263px;
+  --_btn-height: 63px;
+  --_btn-font-size: 2rem;
+
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 100px;
+  margin-inline: auto;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      div {
+        h1 {
+          text-transform: uppercase;
+          font-family: var(--font-family);
+          font-size: var(--font-size-xl);
+          color: var(--font-primary-color);
+          letter-spacing: -0.8px;
+          line-height: var(--line-height-xl);
+          transform: translateX(-5px);
+        }
+        p {
+          margin-top: 1rem;
+          max-width: 497px;
+          font-family: var(--font-family);
+          font-size: var(--_font-size-p);
+          color: #5b5b5b;
+        }
+      }
+
+      .price {
+        margin-top: var(--_margin-top);
+        font-family: var(--font-family);
+        font-size: var(--_price-size);
+        color: var(--font-primary-color);
+      }
+
+      .hero_cta {
+        margin-top: var(--_margin-top);
+        font-family: var(--font-family);
+        width: var(--_btn-width);
+        height: var(--_btn-height);
+        border-radius: 10px;
+        border: none;
+        font-size: var(--_btn-font-size);
+        text-transform: uppercase;
+        background-color: #ffa500;
+        color: white;
+      }
+    }
+    .right {
+      max-width: 576px;
+      max-height: 582px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .info_container {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .info_content {
+      flex-basis: 399px;
+      height: 139px;
+      border: 0.5px solid #d6d6d6;
+      border-radius: 10px;
+      background-color: var(--container-color);
+      padding: 15px 30px 15px 30px;
+      display: flex;
+      justify-content: space-between;
+
+      &:hover {
+        background-color: white;
+      }
+
+      div {
+        h4 {
+          font-size: 24px;
+          color: var(--font-primary-color);
+        }
+        p {
+          margin-top: 5px;
+          font-size: 13px;
+          max-width: 200px;
+          line-height: 13px;
+          color: #5b5b5b;
+        }
+        .cta_info {
+          display: inline-flex;
+          color: var(--accent-color);
+          margin-top: 25px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero_section {
+    --_font-size-p: 10px;
+    --_price-size: 2rem;
+    --_margin-top: 2rem;
+    --_btn-width: 150px;
+    --_btn-height: 45px;
+    --_btn-font-size: 1rem;
+
+    .wrapper {
+      flex-direction: column;
+
+      .right {
+        margin-top: 40px;
+      }
+    }
+  }
+}
