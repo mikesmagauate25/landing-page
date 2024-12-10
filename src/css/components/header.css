@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--container-color);
+  background-color: white;
 
   padding-inline: 30px;
   min-height: var(--_height);
@@ -144,6 +144,7 @@
         text-transform: uppercase;
         letter-spacing: -0.9px;
         padding: 10px;
+        padding-inline: 30px;
         border-radius: 10px;
         border: none;
         background-color: var(--accent-color);
