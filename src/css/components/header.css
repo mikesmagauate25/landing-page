@@ -2,6 +2,7 @@
   --_height: 60px;
 
   width: 100%;
+
   max-width: 1728px;
   position: fixed;
   top: 0;
@@ -9,6 +10,9 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
+
+  left: 50%; /* Aligns the left edge to the center of the viewport */
+  transform: translateX(-50%); /* Shifts it back by half its width */
 
   padding-inline: 30px;
   min-height: var(--_height);
@@ -113,6 +117,7 @@
     .mobile_nav_wrapper {
       display: inline-flex;
       background-color: var(--container-color);
+      min-height: 100vh;
       z-index: 99;
       position: fixed;
       inset: 0;

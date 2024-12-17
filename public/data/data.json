@@ -2,26 +2,26 @@
   {
     "id": 1,
     "color": "black",
-    "image": "/images/black.png"
+    "image": "/images/black.webp"
   },
   {
     "id": 2,
     "color": "orange",
-    "image": "/images/orange.png"
+    "image": "/images/orange.webp"
   },
   {
     "id": 3,
     "color": "red",
-    "image": "/images/red.png"
+    "image": "/images/red.webp"
   },
   {
     "id": 4,
     "color": "orange",
-    "image": "/images/orange.png"
+    "image": "/images/orange.webp"
   },
   {
     "id": 5,
     "color": "yellow",
-    "image": "/images/yellow.png"
+    "image": "/images/yellow.webp"
   }
 ]

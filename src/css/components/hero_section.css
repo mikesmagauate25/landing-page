@@ -43,18 +43,20 @@
         font-size: var(--_price-size);
         color: var(--font-primary-color);
       }
-
-      .hero_cta {
-        margin-top: var(--_margin-top);
-        font-family: var(--font-family);
-        width: var(--_btn-width);
-        height: var(--_btn-height);
-        border-radius: 10px;
-        border: none;
-        font-size: var(--_btn-font-size);
-        text-transform: uppercase;
-        background-color: #ffa500;
-        color: white;
+      a {
+        .hero_cta {
+          margin-top: var(--_margin-top);
+          font-family: var(--font-family);
+          width: var(--_btn-width);
+          height: var(--_btn-height);
+          border-radius: 10px;
+          border: none;
+          font-size: var(--_btn-font-size);
+          text-transform: uppercase;
+          background-color: #ffa500;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
     .right {
@@ -115,8 +117,8 @@
     }
     figure {
       img {
-        max-width: 74px;
-        max-height: 74px;
+        max-width: 70px;
+        max-height: 70px;
         width: 100%;
         height: 100%;
         object-fit: cover;

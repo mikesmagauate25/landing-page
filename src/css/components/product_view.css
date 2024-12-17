@@ -1,82 +1,107 @@
+/* Styles for the product section */
 .product_section {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  max-height: 100%;
+  gap: 20px;
 
   .product_image_container {
-    flex-basis: 45%;
+    flex-basis: 55%;
     position: sticky;
-    top: 90px;
-    border-radius: 10px;
+    min-height: 550px;
+    top: 5.625rem;
+    border-radius: 0.625rem;
     background-color: var(--accent-color);
 
     display: grid;
     place-items: center;
-    gap: 50px;
+    gap: 3.125rem;
 
     figure {
       img {
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: auto;
+
         object-fit: cover;
       }
     }
+
+    /* Media query for .product_image_container */
+    @media (max-width: 768px) {
+      position: static;
+      width: 100%;
+      min-height: 200px;
+
+      figure {
+        width: 100%;
+      }
+    }
   }
+
   .product_content_container {
-    flex-basis: 53%;
-    border-radius: 10px;
+    flex-basis: 45%;
+    border-radius: 0.625rem;
     background-color: var(--container-color);
 
-    padding: 30px;
+    padding: 1.875rem;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 3.125rem;
 
     h2 {
-      font-size: 64px;
+      font-size: 4rem;
       line-height: 100%;
       color: var(--font-primary-color);
 
+      /* Media query for h2 inside .product_content_container */
       @media (max-width: 768px) {
-        font-size: 40px;
+        font-size: 2.5rem;
       }
     }
-    .product_price {
-      font-size: 40px;
 
+    .product_price {
+      font-size: 2.5rem;
+
+      /* Media query for .product_price inside .product_content_container */
       @media (max-width: 768px) {
-        font-size: 24px;
+        font-size: 1.5rem;
       }
     }
+
     .swatches_container {
       .swatch_color_name {
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: var(--font-primary-color);
       }
 
       .swatches_image_container {
         display: flex;
-        gap: 20px;
-        figure {
-          margin-top: 10px;
-          border: 1px solid skyblue;
-          border-radius: 10px;
-          width: 70px;
-          height: 70px;
-          cursor: pointer;
+        gap: 1.25rem;
 
-          @media (max-width: 768px) {
-            width: 50px;
-            height: 50px;
-          }
+        figure {
+          margin-top: 0.625rem;
+          border: 0.5px solid skyblue;
+          border-radius: 0.625rem;
+          width: 4.375rem;
+          height: 4.375rem;
+          cursor: pointer;
+          transition: all 200ms ease-in-out;
 
           &:hover,
           &:focus {
-            border: 1px solid grey;
+            background-color: rgb(234, 234, 234);
           }
+
           img {
             max-width: 100%;
             object-fit: cover;
+          }
+
+          /* Media query for figure inside .swatches_image_container */
+          @media (max-width: 768px) {
+            width: 3.125rem;
+            height: 3.125rem;
           }
         }
       }
@@ -85,51 +110,66 @@
     .description_container {
       .description_name {
         text-transform: uppercase;
-        font-size: 24px;
-      }
-      .description_content {
-        font-size: 14px;
-        max-width: 500px;
-        margin-top: 15px;
-        font-family: var(--font-family-secondary);
+        font-size: 1.5rem;
 
         @media (max-width: 768px) {
-          font-size: 10px;
+          font-size: 1rem;
+        }
+      }
+
+      .description_content {
+        font-size: 0.875rem;
+        max-width: 31.25rem;
+        margin-top: 0.9375rem;
+        font-family: var(--font-family-secondary);
+
+        /* Media query for .description_content inside .description_container */
+        @media (max-width: 768px) {
+          font-size: 0.625rem;
         }
       }
     }
 
     .product_features {
-      max-width: 500px;
+      max-width: 31.25rem;
       display: flex;
       justify-content: start;
       align-items: start;
       flex-direction: column;
-      gap: 40px;
+      gap: 2.5rem;
 
       .product_features_title {
-        font-size: 24px;
+        font-size: 1.5rem;
         text-transform: uppercase;
         color: var(--font-primary-color);
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
 
       .product_list_container {
-        margin-left: 10px;
+        margin-left: 0.625rem;
 
         p:first-child {
-          font-size: 15px;
+          font-size: 0.9375rem;
           text-transform: uppercase;
           color: var(--font-primary-color);
+
+          @media (max-width: 768px) {
+            font-size: 0.8rem;
+          }
         }
 
         p:nth-child(2) {
-          margin-top: 10px;
-          letter-spacing: -0.7px;
+          margin-top: 0.625rem;
+          letter-spacing: -0.04375rem;
           font-family: var(--font-family-secondary);
           font-weight: normal;
 
+          /* Media query for p:nth-child(2) inside .product_list_container */
           @media (max-width: 768px) {
-            font-size: 10px;
+            font-size: 0.625rem;
           }
         }
       }
@@ -138,47 +178,38 @@
     .secondary_cta {
       margin-top: var(--_margin-top);
       font-family: var(--font-family);
-      width: 250px;
-      height: 54px;
-      border-radius: 10px;
+      width: 15.625rem;
+      height: 3.375rem;
+      border-radius: 0.625rem;
       border: none;
-      font-size: var(--_btn-font-size);
+
       text-transform: uppercase;
       background-color: black;
       text-decoration: none;
       color: white;
       display: grid;
       place-items: center;
+
+      /* Media query for .secondary_cta inside .product_content_container */
+      @media (max-width: 768px) {
+        margin-top: 1.875rem;
+        margin-bottom: 1.25rem;
+        width: 10.625rem;
+      }
+    }
+
+    /* Media query for .product_content_container */
+    @media (max-width: 768px) {
+      width: 100%;
+      border-radius: 0.625rem;
+      padding: 0.625rem;
+      gap: 1.875rem;
     }
   }
-}
 
-@media (max-width: 768px) {
-  .product_section {
+  /* Media query for .product_section */
+  @media (max-width: 768px) {
     flex-direction: column;
-    gap: 20px;
-
-    .product_image_container {
-      position: static;
-      width: 100%;
-
-      figure {
-        width: 300px;
-        min-height: 300px;
-      }
-    }
-    .product_content_container {
-      width: 100%;
-      border-radius: 10px;
-
-      padding: 10px;
-      gap: 30px;
-
-      .secondary_cta {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        width: 170px;
-      }
-    }
+    gap: 1.25rem;
   }
 }

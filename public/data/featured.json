@@ -1,0 +1,22 @@
+[
+  {
+    "name": "boonie hat",
+    "price": "$11.99",
+    "images": ["/images/boonie hat.webp", "/images/safari-2nd.webp"]
+  },
+  {
+    "name": "dad hat",
+    "price": "$11.99",
+    "images": ["/images/dadhat.webp", "/images/dadhat-2nd.webp"]
+  },
+  {
+    "name": "flatbrim hat",
+    "price": "$11.99",
+    "images": ["/images/flatbrim hat.webp", "/images/flatbrim-2nd.webp"]
+  },
+  {
+    "name": "beanie",
+    "price": "$11.99",
+    "images": ["/images/beanies.webp", "/images/beanies-2nd.webp"]
+  }
+]

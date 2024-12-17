@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Stylish Bucket Hats - Premium Quality & Free Shipping</title>
+    <meta name="author" content="Florence Michael Maguate" />
     <meta
       name="description"
       content="Shop our premium bucket hats made from high-quality materials. Perfect for sunny days, outdoor adventures, and casual outings. Enjoy free shipping!"
@@ -18,14 +13,40 @@
       name="keywords"
       content="bucket hats, stylish hats, premium hats, outdoor accessories"
     />
-    <meta name="author" content="Florence Michael Maguate" />
+
+    <!-- Preconnect Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font Preload and Stylesheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="/src/assets/fonts/HelveticaNowDisplay-Bold.ttf"
+      type="font/ttf"
+      as="font"
+      crossorigin
+    />
+    <link rel="preload" href="/src/assets/images/hero.webp" as="image" />
+
+    <!-- Page Title -->
+    <title>Stylish Bucket Hats - Premium Quality & Free Shipping</title>
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="src/style.css" />
-    <script src="/src/main.js" type="module"></script>
+
+    <!-- Inline Styles -->
     <style>
       body {
         font-family: "Helvetica Now Display", sans-serif;
       }
     </style>
+
+    <!-- External Script -->
+    <script src="/src/main.js" type="module"></script>
   </head>
   <body>
     <header class="main_header">
@@ -43,9 +64,11 @@
       <nav class="mobile_nav_wrapper" role="navigation">
         <ul class="mobile_nav_container">
           <li class="mobile_nav_list"><a href="#hero">Home</a></li>
-          <li class="mobile_nav_list"><a href="#about">About</a></li>
           <li class="mobile_nav_list"><a href="#product">Product</a></li>
           <li class="mobile_nav_list"><a href="#featured">Featured</a></li>
+          <li class="mobile_nav_list">
+            <a href="#testimonial">Testimonial</a>
+          </li>
         </ul>
         <button class="mobile_header_cta" aria-label="Contact Us">
           Contact Us
@@ -63,11 +86,11 @@
           </li>
           <li>
             <div class="bg_link"></div>
-            <a href="#Other">Other</a>
+            <a href="#featured">Featured</a>
           </li>
           <li>
             <div class="bg_link"></div>
-            <a href="#featured">Featured</a>
+            <a href="#testimonial">Testimonial</a>
           </li>
         </ul>
       </nav>
@@ -92,11 +115,13 @@
               </p>
             </div>
             <div class="price"><span style="color: #5b5b5b">$</span>89.00</div>
-            <button class="hero_cta" aria-label="Shop Now">Shop Now</button>
+            <a href="https://wholesaleforeveryone.com/product/bucket-hat/">
+              <button class="hero_cta" aria-label="Shop Now">Shop Now</button>
+            </a>
           </div>
           <div class="right">
             <img
-              src="/src/assets/images/Frame 12.png"
+              src="/src/assets/images/hero.webp"
               alt="A stylish premium bucket hat"
             />
           </div>
@@ -110,7 +135,7 @@
             </div>
             <figure>
               <img
-                src="/src/assets/images/shipping.png"
+                src="/src/assets/svg/shipping.svg"
                 alt="Free Shipping Icon"
               />
             </figure>
@@ -123,7 +148,7 @@
             </div>
             <figure>
               <img
-                src="/src/assets/images/shopping.png"
+                src="/src/assets/svg/online-shopping.svg"
                 alt="Online Shopping Icon"
               />
             </figure>
@@ -135,7 +160,10 @@
               <a href="#" class="cta_info">View Info</a>
             </div>
             <figure>
-              <img src="/src/assets/images/discount.png" alt="Discount Icon" />
+              <img
+                src="/src/assets/svg/shop-and-save.svg"
+                alt="Discount Icon"
+              />
             </figure>
           </div>
         </div>
@@ -145,7 +173,7 @@
           <figure>
             <img
               class="product_image"
-              src="/images/black.png"
+              src="/images/black.webp"
               alt="Classic black bucket hat"
             />
           </figure>
@@ -158,7 +186,7 @@
             <div class="swatches_image_container"></div>
           </div>
           <div class="description_container">
-            <p class="description_name">description</p>
+            <p class="description_name">Description</p>
             <p class="description_content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -169,7 +197,7 @@
           </div>
 
           <ul class="product_features">
-            <p class="product_features_title">key features</p>
+            <p class="product_features_title">Key Features</p>
             <li class="product_list_container">
               <p>Comfortable and Lightweight</p>
               <p>
@@ -207,15 +235,16 @@
             </li>
           </ul>
 
-          <a class="secondary_cta" href="">shop now</a>
+          <a class="secondary_cta" href="">Shop Now</a>
         </div>
       </section>
       <section id="featured" class="featured_section" data-section="featured">
-        <p>Featured Products Coming Soon</p>
+        <h2>YOU MAY ALSO LIKE</h2>
+        <div class="featured_wrapper"></div>
       </section>
       <section
-        id="featured"
-        class="featured_section"
+        id="testimonial"
+        class="testimonial_section"
         data-section="testimonial"
       >
         <p>Featured Products Coming Soon</p>

@@ -15,7 +15,7 @@ const navigationBgAnims = () => {
       start: "top 10%", // Start when the top of the section reaches the top of the viewport
       end: () => `+=${section.offsetHeight}`, // Dynamic end point based on section height
       scrub: true,
-      // markers: true, // Uncomment for debugging
+
       onUpdate: (self) => {
         const progress = self.progress; // Scroll progress between 0 and 1
         gsap.to(bgLinks[index], {
