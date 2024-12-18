@@ -30,13 +30,17 @@ const mobileMenuAnims = () => {
       duration: 0.4,
       ease: "power2.out",
     })
-    .to(mobileNavLink, {
-      stagger: 0.1,
-      y: 0,
-      opacity: 1,
-      duration: 0.5,
-      ease: "power2.out",
-    })
+    .to(
+      mobileNavLink,
+      {
+        stagger: 0.1,
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.out",
+      },
+      "<0.1"
+    )
     .to(
       mobileHeaderCta,
       { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" },

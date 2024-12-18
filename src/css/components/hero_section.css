@@ -74,21 +74,21 @@
 
 .info_container {
   width: 100%;
-  min-height: 100px;
   margin-top: 70px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 100px;
 
   .info_content {
-    width: 399px;
-    height: 139px;
+    flex: 1;
+    min-height: 139px;
     border: 0.5px solid #d6d6d6;
     border-radius: 10px;
     background-color: var(--container-color);
-    padding: 15px 30px 15px 30px;
+    padding: 17px 30px 17px 30px;
     display: flex;
     justify-content: space-between;
 

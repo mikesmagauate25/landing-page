@@ -1,4 +1,6 @@
 .featured_section {
+  min-height: 100vh;
+
   h2 {
     font-size: clamp(1.5rem, 2vw, 4rem);
     letter-spacing: -1px;
@@ -42,8 +44,10 @@
         justify-content: space-between;
 
         h4 {
-          color: #848484;
+          color: #4b4b4b;
+          font-family: var(--font-family-secondary);
           font-size: var(--sm);
+          font-weight: 400;
         }
       }
       .featured_content_container {
@@ -54,6 +58,7 @@
           font-family: var(--font-family);
           font-size: var(--fs-base);
           color: var(--font-primary-color);
+          text-transform: uppercase;
         }
       }
 

@@ -14,8 +14,9 @@
     border-radius: 0.625rem;
     background-color: var(--accent-color);
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3.125rem;
 
     figure {
@@ -32,10 +33,6 @@
       position: static;
       width: 100%;
       min-height: 200px;
-
-      figure {
-        width: 100%;
-      }
     }
   }
 

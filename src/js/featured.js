@@ -14,11 +14,11 @@ const featured = async () => {
     featuredWrapper.innerHTML += `
         <figure class="featured_container">
           <picture>
-            <img src="${data.images[0]}" />
-            <img src="${data.images[1]}" />
+            <img src="${data.images[0].url}" alt="${data.images[0].alt}"  />
+            <img src="${data.images[1].url}" alt="${data.images[1].alt}" />
           </picture>
           <div class="featured_title_container">
-            <h4>mens</h4>
+            <h4>${data.category}</h4>
             <h4>price</h4>
           </div>
           <div class="featured_content_container">

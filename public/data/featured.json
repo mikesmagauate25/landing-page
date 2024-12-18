@@ -2,21 +2,61 @@
   {
     "name": "boonie hat",
     "price": "$11.99",
-    "images": ["/images/boonie hat.webp", "/images/safari-2nd.webp"]
+    "category": "mens",
+    "images": [
+      {
+        "url": "/images/boonie hat.webp",
+        "alt": "Lightweight boonie hat for men with wide brim"
+      },
+      {
+        "url": "/images/safari-2nd.webp",
+        "alt": "Men's safari-style boonie hat, side view"
+      }
+    ]
   },
   {
     "name": "dad hat",
     "price": "$11.99",
-    "images": ["/images/dadhat.webp", "/images/dadhat-2nd.webp"]
+    "category": "mens",
+    "images": [
+      {
+        "url": "/images/dadhat.webp",
+        "alt": "Classic dad hat for men with adjustable strap"
+      },
+      {
+        "url": "/images/dadhat-2nd.webp",
+        "alt": "Men's casual dad hat, angled view"
+      }
+    ]
   },
   {
     "name": "flatbrim hat",
     "price": "$11.99",
-    "images": ["/images/flatbrim hat.webp", "/images/flatbrim-2nd.webp"]
+    "category": "mens",
+    "images": [
+      {
+        "url": "/images/flatbrim hat.webp",
+        "alt": "Flatbrim hat for men with a structured crown"
+      },
+      {
+        "url": "/images/flatbrim-2nd.webp",
+        "alt": "Men's flatbrim hat, side view"
+      }
+    ]
   },
   {
     "name": "beanie",
     "price": "$11.99",
-    "images": ["/images/beanies.webp", "/images/beanies-2nd.webp"]
+    "category": "unisex",
+    "images": [
+      {
+        "url": "/images/beanies.webp",
+        "alt": "Soft and cozy beanie for all genders"
+      },
+      {
+        "url": "/images/beanies-2nd.webp",
+        "alt": "Unisex beanie in stylish knit fabric, side view"
+      }
+    ]
   }
 ]

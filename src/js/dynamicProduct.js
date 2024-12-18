@@ -11,7 +11,7 @@ const dynamicProduct = async () => {
 
   datas.forEach((data) => {
     imageContainer.innerHTML += `<figure class="swatch_container" tabindex="0" role="button" aria-label="${data.color} color swatch">
-                <img src=${data.image} alt="" />
+                <img src=${data.image} alt="bucket hat swatches" />
               </figure>`;
   });
 
