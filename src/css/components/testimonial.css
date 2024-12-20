@@ -69,7 +69,7 @@
 
         img {
           max-width: 70px;
-          transform: translateX(-10px);
+          margin-bottom: 5px;
           height: auto;
 
           @media (max-width: 768px) {
