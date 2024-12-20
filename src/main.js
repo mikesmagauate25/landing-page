@@ -3,3 +3,4 @@ import "/src/js/navigationBgAnims.js";
 import "/src/js/smoothScrolling.js";
 import "/src/js/dynamicProduct.js";
 import "/src/js/featured.js";
+import "/src/js/testimonial.js";

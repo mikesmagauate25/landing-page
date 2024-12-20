@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Lorence Green",
+    "location": "L.A. California",
+    "icon": "/src/assets/svg/quotes-icon.svg",
+    "testimonial": "I’ve purchased three of these bucket hats already! They come in such fun designs, and they really complete my outfits. Plus, they’re practical for both sunny and rainy days.",
+    "avatar": "/images/lorence.webp"
+  },
+  {
+    "name": "Emily R.",
+    "location": "Miami, FL",
+    "icon": "/src/assets/svg/quotes-icon.svg",
+    "testimonial": "I absolutely adore these bucket hats! They’re super stylish and comfortable, and they provide great sun protection during my beach trips. I get compliments every time I wear one!",
+    "avatar": "/images/emily.webp"
+  },
+  {
+    "name": "Chris L.",
+    "location": "New York, NY",
+    "icon": "/src/assets/svg/quotes-icon.svg",
+    "testimonial": "The fit is amazing, and the designs are super trendy. I’ve gifted these bucket hats to friends, and they love them too. Worth every penny!",
+    "avatar": "/images/criss.webp"
+  }
+]
