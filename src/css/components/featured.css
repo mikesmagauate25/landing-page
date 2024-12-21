@@ -35,7 +35,7 @@
         min-height: auto;
         display: inline-flex;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 10px;
         overflow: hidden;
 
         img {
@@ -56,6 +56,10 @@
           font-family: var(--font-family-secondary);
           font-size: var(--sm);
           font-weight: 400;
+
+          @media (max-width: 768px) {
+            font-size: 0.8rem;
+          }
         }
       }
       .featured_content_container {
@@ -67,6 +71,10 @@
           font-size: var(--fs-base);
           color: var(--font-primary-color);
           text-transform: uppercase;
+
+          @media (max-width: 768px) {
+            font-size: 0.9rem;
+          }
         }
       }
 

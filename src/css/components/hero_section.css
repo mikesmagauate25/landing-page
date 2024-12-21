@@ -56,6 +56,7 @@
           background-color: #ffa500;
           color: white;
           cursor: pointer;
+          transition: all 200ms ease-in-out;
         }
       }
     }
@@ -129,7 +130,7 @@
 
 @media (max-width: 768px) {
   .hero_section {
-    --_font-size-p: 10px;
+    --_font-size-p: 0.8rem;
     --_price-size: 2rem;
     --_margin-top: 2rem;
     --_btn-width: 150px;

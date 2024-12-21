@@ -1,3 +1,7 @@
+import Swiper from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+
 const fetchData = async () => {
   const response = await fetch("/data/testimonial.json");
   const data = response.json();
@@ -6,10 +10,10 @@ const fetchData = async () => {
 
 const testimonial = async () => {
   const datas = await fetchData();
-  const testimonialWrapper = document.querySelector(".testimonial_wrapper");
+  const testimonialWrapper = document.querySelector(".swiper-wrapper");
 
   datas.forEach((data) => {
-    testimonialWrapper.innerHTML += `<figure class="testimonial">
+    testimonialWrapper.innerHTML += `<figure class="testimonial swiper-slide">
             <picture class="testimonial_image_container">
               <img src="${data.avatar}" alt="${data.name}" />
             </picture>
@@ -29,6 +33,33 @@ const testimonial = async () => {
             </figcaption>
           </figure>`;
   });
+
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    breakpoints: {
+      // For screens smaller than 768px
+      0: {
+        // Handles all screens starting from 0px
+        slidesPerView: 1.1,
+        spaceBetween: 10,
+      },
+      // For screens 768px and larger
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+  swiper;
 };
 testimonial();
 export default testimonial;
