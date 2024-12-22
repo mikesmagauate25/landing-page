@@ -1,0 +1,162 @@
+footer {
+  padding-top: 50px;
+  padding: 20px;
+
+  .footer_container {
+    max-width: 1440px;
+    margin-inline: auto;
+    margin-top: 50px;
+
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    div {
+      flex: 1;
+
+      color: white;
+
+      h5 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: var(--font-family-secondary);
+        font-weight: 400;
+
+        @media (max-width: 768px) {
+          font-size: 0.8rem;
+        }
+      }
+
+      ul {
+        margin-top: 20px;
+        li {
+          margin-top: 8px;
+          font-family: var(--font-family-secondary);
+          color: rgb(215, 215, 215);
+          font-size: 0.8rem;
+
+          @media (max-width: 768px) {
+            font-size: 0.4rem;
+          }
+        }
+      }
+    }
+
+    .about_us_container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-family: var(--font-family-secondary);
+      color: rgb(215, 215, 215);
+      font-size: 0.8rem;
+
+      picture {
+        @media (max-width: 768px) {
+          width: 90px;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      p {
+        @media (max-width: 768px) {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
+  .wrapper {
+    margin-top: 100px;
+    max-width: 1440px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+
+    @media (max-width: 768px) {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    form {
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      label {
+        color: white;
+        font-family: var(--font-family-secondary);
+      }
+
+      .input_container {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+
+        input {
+          margin: 0; /* Remove margin to prevent misalignment */
+          display: inline-flex;
+          /* Add border if needed for debugging */
+          padding: 0 10px; /* Add padding for spacing inside the input */
+          width: 400px;
+          height: 45px; /* Ensure consistent height */
+          box-sizing: border-box; /* Ensure padding doesn't affect size */
+          border-radius: 5px;
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+
+        button {
+          background-color: var(--accent-color);
+          color: white;
+          height: 45px; /* Match input height */
+          width: 150px;
+          font-size: 1.2rem;
+          padding: 0; /* Avoid extra spacing */
+          box-sizing: border-box;
+          border-radius: 5px;
+
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .icons_wrapper {
+      p {
+        color: white;
+        text-transform: uppercase;
+        font-family: var(--font-family-secondary);
+      }
+
+      .icons_container {
+        margin-top: 10px;
+        display: flex;
+
+        gap: 25px;
+        img {
+          max-width: 35px;
+        }
+      }
+    }
+  }
+}

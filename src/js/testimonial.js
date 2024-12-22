@@ -38,7 +38,7 @@ const testimonial = async () => {
     // Optional parameters
     direction: "horizontal",
     slidesPerView: 3,
-    spaceBetween: 20,
+
     loop: false,
     pagination: {
       el: ".swiper-pagination",
@@ -54,7 +54,7 @@ const testimonial = async () => {
       // For screens 768px and larger
       768: {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 60,
       },
     },
   });

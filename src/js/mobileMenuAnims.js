@@ -58,6 +58,17 @@ const mobileMenuAnims = () => {
       mobileButtonOpen();
     }
   });
+
+  // Close menu when a navigation link is clicked
+  mobileNavLink.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (isMenuOpen) {
+        isMenuOpen = false;
+        timeline.reverse();
+        mobileButtonOpen();
+      }
+    });
+  });
 };
 
 const mobileButtonClose = () => {

@@ -21,10 +21,17 @@
     "avatar": "/images/criss.webp"
   },
   {
-    "name": "Chris L.",
-    "location": "New York, NY",
+    "name": "Samantha T.",
+    "location": "Austin, TX",
     "icon": "/images/testimonial-icon.png",
-    "testimonial": "The fit is amazing, and the designs are super trendy. I’ve gifted these bucket hats to friends, and they love them too. Worth every penny!",
-    "avatar": "/images/criss.webp"
+    "testimonial": "These bucket hats are a must-have accessory! I love how lightweight and versatile they are. They’ve become my go-to for outdoor events and casual outings.",
+    "avatar": "/images/samantha.webp"
+  },
+  {
+    "name": "Jordan K.",
+    "location": "Seattle, WA",
+    "icon": "/images/testimonial-icon.png",
+    "testimonial": "Fantastic quality and unique designs! The bucket hats hold up well even after multiple washes. I’ve started collecting them because they’re so cool.",
+    "avatar": "/images/jordan.webp"
   }
 ]

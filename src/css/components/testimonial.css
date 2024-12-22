@@ -1,6 +1,6 @@
 .testimonial_section {
-  min-height: 100vh;
   overflow-x: hidden;
+  margin-bottom: 100px;
 
   p:first-child {
     font-family: var(--font-family-secondary);
@@ -61,16 +61,28 @@
             p {
               margin-top: 10px;
               font-size: 1.3rem;
-              font-family: var(--font-family);
+              font-family: var(--font-family-secondary);
+              font-weight: 500;
+              line-height: 1.4rem;
+              letter-spacing: -1px;
+
+              @media (max-width: 768px) {
+                font-size: 1.1rem;
+              }
             }
           }
 
           .testimonial_author {
             strong {
-              font-size: 1.2rem;
+              font-size: 1.1rem;
+
+              @media (max-width: 768px) {
+                font-size: 1rem;
+              }
             }
 
             span {
+              font-size: 1rem;
               color: lightslategray;
             }
           }

@@ -39,7 +39,7 @@
   .product_content_container {
     flex-basis: 45%;
     border-radius: 0.625rem;
-    background-color: var(--container-color);
+    background-color: white;
 
     padding: 1.875rem;
     display: flex;

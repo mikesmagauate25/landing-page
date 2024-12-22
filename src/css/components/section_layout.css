@@ -8,7 +8,6 @@ section[data-section]:not(:first-child) {
 }
 
 footer {
-  min-height: 70vh;
   max-width: 1728px;
   width: 100%;
   background-color: #141414;
