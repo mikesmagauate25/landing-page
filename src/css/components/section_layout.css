@@ -9,6 +9,7 @@ section[data-section]:not(:first-child) {
 
 footer {
   max-width: 1728px;
+  margin-inline: auto;
   width: 100%;
   background-color: #141414;
 }

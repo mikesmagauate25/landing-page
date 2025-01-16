@@ -29,7 +29,7 @@ footer {
         font-weight: 400;
 
         @media (max-width: 768px) {
-          font-size: 0.8rem;
+          font-size: 1.1rem;
         }
       }
 
@@ -42,7 +42,7 @@ footer {
           font-size: 0.8rem;
 
           @media (max-width: 768px) {
-            font-size: 0.4rem;
+            font-size: 1rem;
           }
         }
       }
@@ -156,6 +156,38 @@ footer {
         img {
           max-width: 35px;
         }
+      }
+    }
+  }
+
+  .author {
+    margin-top: 100px;
+    max-width: 1440px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid rgb(94, 94, 94);
+
+    .copywrite {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: white;
+
+      @media (max-width: 768px) {
+        font-size: 0.6rem;
+      }
+    }
+    .top {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+
+      @media (max-width: 768px) {
+        font-size: 0.6rem;
       }
     }
   }
